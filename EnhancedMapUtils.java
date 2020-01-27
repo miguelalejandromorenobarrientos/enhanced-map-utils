@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /**
- * Utility methods for adding/removing items to a map in an easiest way.
+ * Utility methods for adding/removing items to a map in an easier way.
  * 
  * @author Miguel Alejandro Moreno Barrientos, (C) 2020
  */
@@ -44,7 +44,7 @@ final public class EnhancedMapUtils
 	{
 		if ( (keyValuePairs.length&1) == 1 )
 			throw new IllegalArgumentException( 
-											"The number of items must be even (key/value pairs)" );
+						"The number of items must be even (key/value pairs)" );
 
 		for ( int i = 0; i < keyValuePairs.length; i += 2 )
 			map.put( (K) keyValuePairs[i], (V) keyValuePairs[i+1] );
